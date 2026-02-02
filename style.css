@@ -1,0 +1,32 @@
+body{
+    h1{
+        text-align: center;
+        color : gray;
+    }
+    background-color: auto;
+    
+    font-family: 'Verdana';
+
+    article{
+        border-radius: 25px;
+        margin : 10px;
+        padding : 10px;
+        background-color: #DDDDDD;
+
+        h2{
+            margin-top: 0px;
+        }
+
+        p{
+            margin-top: -10px;
+            
+        }
+        
+        ul{
+            list-style-type:disc;
+            margin-top: -15px;
+        }
+            
+    }
+    
+}
