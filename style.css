@@ -9,6 +9,8 @@ body{
     
     font-family: 'Verdana';
 
+
+
     article{
         color: aliceblue;
 
@@ -17,6 +19,10 @@ body{
         padding : 10px;
         border-style: double;
         border-color: aqua;
+    }
+
+    article.principal{
+        border-color: greenyellow;
     }
 
     p{
