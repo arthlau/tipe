@@ -1,32 +1,40 @@
 body{
+    background-color: black;
+
     h1{
         text-align: center;
-        color : gray;
+        text-decoration: underline cyan;
+        color : aliceblue;
     }
-    background-color: auto;
     
     font-family: 'Verdana';
 
     article{
-        border-radius: 25px;
+        color: aliceblue;
+
+        border-radius: 10px;
         margin : 10px;
         padding : 10px;
-        background-color: #DDDDDD;
+        border-style: double;
+        border-color: aqua;
+    }
 
-        h2{
-            margin-top: 0px;
-        }
+    p{
+        margin-top: -10px;
+    }
+    
+    li.sec{
+        list-style-type : "\21B3";
+    }
 
-        p{
-            margin-top: -10px;
-            
-        }
-        
-        ul{
-            list-style-type:disc;
-            margin-top: -15px;
-        }
-            
+    ul{
+        list-style-type: disc;
+        margin-top: -15px;
+    }
+    
+    h2{
+        margin-top: 0px;
+        text-decoration: underline aliceblue;
     }
     
 }
