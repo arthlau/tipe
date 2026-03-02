@@ -7,19 +7,16 @@ h1{
     text-align: center;
     text-decoration: underline #88a0b3;
     color : #88a0b3;
-    max-width: 1000px;
+    max-width: 1250px;
 }
 
 article{
     background-color: #303436;
     color: #88a0b3;
-    border-radius: 10px;
     margin : 10px;
     padding : 10px;
-    border-style: solid;
-    border-width: 3px;
-    border-color:#2b2e30;
-
+    border-radius: 10px;
+    background: linear-gradient(90deg, #303436 1000px, #111213 1500px);
 }
 
 p{
