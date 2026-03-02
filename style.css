@@ -1,26 +1,25 @@
 body{
-    background-color: black;
+    background-color: #111213;
     font-family: 'Verdana';
 }
 
 h1{
     text-align: center;
-    text-decoration: underline cyan;
-    color : aliceblue;
+    text-decoration: underline #88a0b3;
+    color : #88a0b3;
     max-width: 1000px;
 }
 
 article{
-    color: aliceblue;
+    background-color: #303436;
+    color: #88a0b3;
     border-radius: 10px;
     margin : 10px;
     padding : 10px;
-    border-style: double;
-    border-color: aqua;
-}
+    border-style: solid;
+    border-width: 3px;
+    border-color:#2b2e30;
 
-article.principal{
-    border-color:lawngreen;
 }
 
 p{
@@ -38,7 +37,7 @@ ul{
 
 h2{
     margin-top: 0px;
-    text-decoration: underline aliceblue;
+    text-decoration: underline #88a0b3;
 }
 
 a:link{
