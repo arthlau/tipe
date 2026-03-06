@@ -4,6 +4,7 @@ body{
     max-width: 1250px;
     margin : auto;
     background: linear-gradient(90deg, #000 25%, #111213 75%);
+    font-size: larger;
 }
 
 h1{
