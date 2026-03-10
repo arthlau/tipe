@@ -1,8 +1,10 @@
 <head>
     <title>TIPE Arth L</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <article>
     <h1>TIPE DE MOI</h1>
     <h3>Jour 1</h3>
     <p>
@@ -12,21 +14,37 @@
         <a href="https://wikipedia.org" target="_blank">wikipedia</a>
     <br>
     
-    <a href="autre_page.html">autre page</a>
+    <a href="code/autre_page.html">autre page</a>
     
     <br>
 
 
     <pre>
+    <style>
+        code {
+        color:aliceblue;
+        font-family: 'Courier New', Courier, monospace
+    }
+    .code {
+        background: #192023;
+        width: fit-content;
+        padding-right: 10%;
+        border-radius: 10px;
+        border-style: groove;
+        border-color: #191c23;
+    }
+    </style>
     <code>
+    <div class="code" contenteditable="true">
         int main (void){
             int a = 0;
             return 0;
         }
-    </code>
+    </div>
+</code>
     </pre>
     Ici, <code>main()</code> fait simplement une assignation de a à 0.<br>
     </p>
 
-
+</article>
 </body>
