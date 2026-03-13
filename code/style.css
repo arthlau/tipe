@@ -7,6 +7,22 @@ body{
     font-size: larger;
 }
 
+button{
+    min-width: 40px;
+    height: 40px;
+    margin: 20px;
+    margin-bottom: -60px;
+    background: #303436;
+    border-radius: 10px;
+    border-style: none;
+    padding: 7px;
+    color: #88a0b3;
+}
+button:hover{
+    background: #192023;
+    color: #879199;
+}
+
 h1{
     text-align: center;
     text-decoration: underline #88a0b3;
