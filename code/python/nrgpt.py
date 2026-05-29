@@ -1,6 +1,8 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.spatial import Delaunay
+import base64
+from io import BytesIO
 
 # =========================
 # 1. GENERATION DU RESEAU
@@ -469,12 +471,17 @@ def main():
         nodes,
         "Reseau initial"
     )
+    plt.savefig("proto1.pdf", bbox_inches = "tight")
 
     plot_network(
         optimal_tree,
         nodes,
         "Reseau optimise BRKGA"
     )
+
+    plt.savefig("proto2.pdf", bbox_inches = "tight")
+
+
 
     plt.show()
 
