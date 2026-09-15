@@ -14,16 +14,14 @@ En évaluant sur le meme système que précédemment, les pertes sont semblables
 Dans notre approche, la solution optimale est donc celle qui présente le moins de perte sur l'ensemble des scénarios.
 Cela implique qu'on doit évaluer chaque solution sur chaque scénario, par ex, si on a 50 éoliennes toutes avec 4 valeurs de gen possibles, on a 50⁴ scénarios a confronter à chaque candidats, c'est beaucoup trop.
 
-On va donc faire l'hypothèse qu'un groupe d'éoliennes toutes géographiquement proches génèrent une quantité proche d'énergie, donc pour chaque 'cluster' d'éoliennes, on associe une unique valeur de production.
+On va donc faire l'hypothèse qu'un groupe d'éoliennes toutes géographiquement proches génèrent une quantité proche d'énergie, donc pour chaque 'cluster' d'éoliennes, on associe une unique valeur de production, on va aussi essayer de montrer que cette approche donne des résultats similaires.
 Procéder ainsi nous permet d'augmenter considérablement la taille de notre simulation sans ajouter un nombre exponentiel de scénarios.
 
 Ensuite, considérant le développement d'infrastructures comme les smart-grids, est-ce qu'on pourrait, au lieu de trouver une solution bonne partout, on pourrait pas prendre un set de solutions chacune répondant à un ensemble de scénarios ?
-Les pertes  moyennes sur l'ensemble des scénarios est-elle plus basse que précédemment ?
+Les pertes  moyennes sur l'ensemble des scénarios est-elle plus basse que précédemment ? Clairement oui, mais au prix de création d'infrastructures pour "switch" entre ces configuration, il est donc impératif de prendre ça en compte lors de la simulation.
 
 # Trouver la solution
 Maintenant qu'on sait comment on définit notre meilleure solution, on va la trouver comment ?
 De manière générale, lorsqu'il s'agit d'un problème de reconfiguration de réseau (NRP/DRP), la littérature montre que les algos génétique sont prévalent.
-En effet, ce type de problème est NP-DIFFICILE (Preuve dans https://www.sciencedirect.com/topics/computer-science/reconfiguration-problem), c'est donc la piste qu'on va préferer.
-Dans le papier ici : https://www.sciencedirect.com/science/article/pii/S0305054817302526?fr=RR-2&ref=pdf_download&rr=a38e35b8ca37ebb0, on va utiliser le BRKGA qui, 
-au dela de présenter de meilleurs résultats que d'autres algos génétiques, il nous permet d'obtenir à chaque génération des solutions valides : des arbres, 
-ce qui évite de devoir les corriger, et donc de gagner du temps de calcul.
+En effet, ce type de problème est NP-DIFFICILE car contrairement à un cas ou on pourrait simplement appliquer Kruskal par ex, le poids des arcs dépends de la structure choisie,pas simplement de la distance, c'est donc la piste qu'on va préferer.
+Dans le papier ici : https://www.sciencedirect.com/science/article/pii/S0305054817302526?fr=RR-2&ref=pdf_download&rr=a38e35b8ca37ebb0, on va utiliser le BRKGA qui, au dela de présenter de meilleurs résultats que d'autres algos génétiques, il nous permet d'obtenir à chaque génération des solutions valides : des arbres, ce qui évite de devoir les corriger, et donc de gagner du temps de calcul.
